@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Who is the best footballer?</h1>
+        <p id="description">
+            This survey is to find out who the best footballer is. Enter your
+            details below to participate.
+        </p>
+
+        <form id="survey-form">
+            <div>
+                <div>
+                    <label for="name" id="name-label">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="number" id="number-label">Age:</label>
+                    <input
+                        type="number"
+                        id="number"
+                        name="number"
+                        placeholder="00"
+                        min="13"
+                        max="100"
+                        required
+                    />
+                </div>
+            </div>
+            <div>
+                <p>Which footballer do you prefer?</p>
+                <select id="dropdown" name="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Messi">Lionel Messi</option>
+                    <option value="Ronaldo">Cristiano Ronaldo</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p>For how long have you been watching football?</p>
+                <div>
+                    <input type="radio" id="5+" name="radio" value="5+" />
+                    <label for="5+">5+ years</label>
+                </div>
+                <div>
+                    <input type="radio" id="1-4" name="radio" value="1-4" />
+                    <label for="1-4">1-4 years</label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        id="Just started"
+                        name="radio"
+                        value="Now"
+                    />
+                    <label for="Just started">Just started</label>
+                </div>
+            </div>
+            <div>
+                <p>What team do you prefer?</p>
+                <select id="team" name="team">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Atletico Madrid">Atletico Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Real Madrid">Real Madrid</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <p>What type of play you like to watch?</p>
+                <input type="checkbox" id="attacking" name="attacking" value="attack">
+                <label for="attacking">Attacking</label>
+                <input type="checkbox" id="defensive" name="defensive" value="defend">
+                <label for="defensive">Defensive</label>
+                <input type="checkbox" id="Tiki-Taka" name="Tiki-Taka" value="pass">
+                <label for="Tiki-Taka">Tiki-Taka</label>
+                <input type="checkbox" id="Joga-Bonito" name="Joga-Bonito" value="skills">
+                <label for="Joga-Bonito">Joga-Bonito</label>
+            </div>
+            <div>
+                <p>Any other thoughts to share?</p>
+                <textarea placeholder="Type here"></textarea>
+                <div>
+                <button id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
