@@ -2,23 +2,34 @@ body {
     background-color: #2F5233;
 }
 
+ul{
+    list-style-type: none;
+}
+.sub-item {
+    list-style-type: square;
+}
+
 a {
     text-decoration: none;
-    color: ;
 }
 
-.sub-item-link::hover{
-  color: #C97B3D;
+a:link {
+    color: orangered;
 }
 
-#sub-item-link::visited {
-    color: #8C9A6E;
+a:visited {
+    color: wheat;
 }
 
-#sub-item-link::active {
-    color: rebeccapurple;
+a:hover {
+    color: salmon;
 }
 
-ul {
-    list-style: none;
+a:active {
+    color: red;
+}
+
+a:focus {
+    color: sandybrown;
+    outline: 2px solid gray;
 }
