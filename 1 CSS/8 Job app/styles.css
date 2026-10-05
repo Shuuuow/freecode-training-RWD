@@ -1,0 +1,49 @@
+input:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+button:hover {
+    background-color: maroon;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: green;
+    box-shadow: 0 0 0 3px chartreuse;
+    background-color: chartreuse;
+}
+
+
+label:checked {
+    font-weight: bold;
+    color: chartreuse;
+}
+
+div {
+    margin: 1.2em;
+}
+
+div #name,
+div #email,
+div select,
+div textarea {
+    width: 100%;
+    padding: 0.8em;
+}
+
+button {
+    margin: 1.2em;
+}
