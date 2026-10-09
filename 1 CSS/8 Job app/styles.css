@@ -4,6 +4,43 @@ input, textarea, select, fieldset{
     margin: 10px;
 }
 
-input:not(fieldset *), label:not(fieldset *){
+input:not(fieldset *), label:not(fieldset *), button{
     display: block;
+}
+
+label + input:not(fieldset *){
+    margin-right: 25px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.radio-group input[type="radio"]:checked{
+    border-color: aqua;
+    background-color: aqua;
+    box-shadow: 9px 5px 5px #bf6d56b3;
+}
+
+.radio-group label:has(input[type="radio"]:checked) {
+  color: #1d4ed8;
+}
+
+input:first-of-type{
+    font: bolder;
+    color: blueviolet;
 }
